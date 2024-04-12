@@ -444,7 +444,7 @@ class MainWindow(QMainWindow, WindowMixin):
         # Custom context menu for the canvas widget:
         add_actions(self.canvas.menus[0], self.actions.beginnerContext)
         add_actions(self.canvas.menus[1], (
-            action('&Copy here', self.copy_shape),
+            action('&Copy here', self.copy_shape),  
             action('&Move here', self.move_shape)))
 
         self.tools = self.toolbar('Tools')
